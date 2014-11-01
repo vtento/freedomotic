@@ -143,7 +143,7 @@ public class MySensors extends Protocol {
                     event.addProperty("sensor.isOn", "false");
                 }
             }
-            event.addProperty("sensor.value", payload);
+            event.addProperty("sensor.value", payload/16);
             this.notifyEvent(event);
 
         }
